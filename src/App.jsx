@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from './components/navbar'
 import Home from './home'
+import Footer from "./components/footer"
 import './App.css'
 
 function App() {
@@ -11,8 +12,12 @@ function App() {
         <div> 
           <Navbar/>
           <Home/>
+ 
         </div>
-      </div>
+        </div>
+      <div className='footer'>
+          <Footer/>
+               </div>
     </>
   )
 }

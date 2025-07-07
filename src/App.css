@@ -1,0 +1,27 @@
+/* Make sure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Main container fills the whole screen */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content should grow and push the footer down */
+main {
+  flex: 1;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
