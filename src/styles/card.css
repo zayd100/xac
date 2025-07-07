@@ -33,3 +33,10 @@
   font-size: 1rem;
   color: #ccc;
 }
+/* card image */
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
