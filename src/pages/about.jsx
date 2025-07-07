@@ -1,4 +1,5 @@
-function About(){
+
+const  About= () =>{
     return(
         <p>About us</p>  
     );
