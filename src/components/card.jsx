@@ -4,44 +4,44 @@ import '../styles/card.css';
 const Card = ({ name, type, price, image, description, features, availability }) => {
     const [showPopup, setShowPopup] = useState(false);
 
-    const openPopup = () => {
-        setShowPopup(true);
-    };
-
-    const closePopup = () => {
-        setShowPopup(false);
-    };
+    const openPopup = () => setShowPopup(true);
+    const closePopup = () => setShowPopup(false);
 
     return (
         <>
             <div className="card">
-                <div className='card-image'>
-                    <img src={image} alt={name} />
+                <div className="card-content">
+                    <div className="card-image-container">
+                        <img src={image} alt={name} className="card-image" />
+                        <div className="card-image-overlay"></div>
+                    </div>
+                    <h3 className="card-title">{name}</h3>
+                    <div className="card-type">{type}</div>
+                    <p className="card-description">
+                        {description || "High-quality premium item with excellent features and design."}
+                    </p>
+                    <div className="card-footer">
+                        <div className="card-price">{price}$/week</div>
+                        <button className="card-button" onClick={openPopup}>
+                            View Details
+                        </button>
+                    </div>
                 </div>
-                <h1 className='card-title'>{name}</h1>
-                <h2 className='card-type'>{type}</h2>
-                <p className='card-price'>{price}$</p>
-                
-                {/* Details Button */}
-                <button className="card-button" onClick={openPopup}>
-                    View Details
-                </button>
+                <div className="card-corner"></div>
             </div>
 
             {/* Popup Modal */}
             {showPopup && (
                 <div className="popup-overlay" onClick={closePopup}>
                     <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-                        <button className="popup-close" onClick={closePopup}>
-                            ×
-                        </button>
+                        <button className="popup-close" onClick={closePopup}>×</button>
                         
                         <div className="popup-header">
                             <img src={image} alt={name} className="popup-image" />
                             <div className="popup-info">
                                 <h1 className="popup-title">{name}</h1>
                                 <h2 className="popup-type">{type}</h2>
-                                <p className="popup-price">{price}$</p>
+                                <p className="popup-price">{price}$/week</p>
                             </div>
                         </div>
                         
@@ -75,7 +75,6 @@ const Card = ({ name, type, price, image, description, features, availability })
                         </div>
                         
                         <div className="popup-footer">
-                           
                             <button className="popup-secondary-btn" onClick={closePopup}>
                                 Close
                             </button>

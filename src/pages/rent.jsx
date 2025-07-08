@@ -8,19 +8,19 @@ const Rent= () =>{
 {
     name: "sofa",
     type:"luxury",
-    price:1200,
+    price:600,
     image: sofa
 },
 {
     name: "chair",
     type:"luxury",
-    price:800,
+    price:230,
     image: chair
 },
 {
     name: "King Size Bed",
     type : "Premium",
-    price: 1500,
+    price: 900,
     image: bed
 },
 {
