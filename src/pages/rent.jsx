@@ -9,32 +9,36 @@ const Rent= () =>{
     name: "sofa",
     type:"luxury",
     price:600,
-    image: sofa
+    image: sofa,
+    country:"armenia"
 },
 {
     name: "chair",
     type:"luxury",
     price:230,
-    image: chair
+    image: chair,
+    country: "azerbaijan"
 },
 {
     name: "King Size Bed",
     type : "Premium",
     price: 900,
-    image: bed
+    image: bed,
+    country: "belgium"
 },
 {
     name: "Study Lamp",
     type: "Standard",
     price: 200,
-    image: lamp
+    image: lamp,
+    country: "usa"
 }
     ];
     return(
         <div >
         <p>Rent</p>
         {carddata.map((item, index) => (
-            <Card key={index} name={item.name} type={item.type} price={item.price} image={item.image}/>
+            <Card key={index} name={item.name} type={item.type} price={item.price} image={item.image} country={item.country}/>
         ))}
         </div>
     );

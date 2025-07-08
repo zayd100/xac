@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/card.css';
 
-const Card = ({ name, type, price, image, description, features, availability }) => {
+const Card = ({ name, type, price, image, description, features, availability, country }) => {
     const [showPopup, setShowPopup] = useState(false);
 
     const openPopup = () => setShowPopup(true);
@@ -20,6 +20,7 @@ const Card = ({ name, type, price, image, description, features, availability })
                     <p className="card-description">
                         {description || "High-quality premium item with excellent features and design."}
                     </p>
+                    <p className='card-description'>Origin: {country}</p>
                     <div className="card-footer">
                         <div className="card-price">{price}$/week</div>
                         <button className="card-button" onClick={openPopup}>
@@ -71,7 +72,12 @@ const Card = ({ name, type, price, image, description, features, availability })
                                 <p className="availability-status">
                                     {availability || "In Stock"}
                                 </p>
-                            </div>
+                                </div>
+                                <h3>Country of origin</h3>
+                                <p className='availability-status'>
+                                    {country}
+                                </p>
+                            
                         </div>
                         
                         <div className="popup-footer">
