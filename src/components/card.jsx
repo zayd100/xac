@@ -75,9 +75,7 @@ const Card = ({ name, type, price, image, description, features, availability })
                         </div>
                         
                         <div className="popup-footer">
-                            <button className="popup-action-btn">
-                                Add to Cart
-                            </button>
+                           
                             <button className="popup-secondary-btn" onClick={closePopup}>
                                 Close
                             </button>
