@@ -3,6 +3,7 @@ import sofa from "../assets/sofa.png";
 import bed from "../assets/bed.png";
 import lamp from "../assets/lamp.png";
 import chair from "../assets/chair.png";
+import rt from "../assets/rt.png";
 const Rent= () =>{
     const carddata = [
 {
@@ -32,6 +33,13 @@ const Rent= () =>{
     price: 200,
     image: lamp,
     country: "usa"
+},
+{
+    name: "Royal Side Tables",
+    type: "Luxury",
+    price: 320,
+    image: rt,
+    country: "Sweden"
 }
     ];
     return(
