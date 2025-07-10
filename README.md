@@ -35,7 +35,7 @@ A modern, lightning-fast furniture rental platform built with React.js and Vite.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/zayd100/xoc.git
+   git clone https://github.com/zayd100/xac.git
    cd furniture-rent-app
    ```
 
