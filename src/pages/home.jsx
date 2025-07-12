@@ -1,7 +1,5 @@
 import React from "react";
 import Homecard from '../components/HomeCard'
-import Footer from '../components/footer';
-import Navbar from '../components/navbar';
 import { useState } from "react";
 import '../styles/home.css';
 import home1 from '../assets/home1.png';

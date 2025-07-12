@@ -1,0 +1,9 @@
+
+.rent {
+  padding-top: 5rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2a0b7e; 
+}
