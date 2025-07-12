@@ -1,0 +1,108 @@
+/* homecard.css */
+.home-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  padding: 40px;
+  max-width: 800px;
+  width: 90%;
+  margin: 24px auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.home-headline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.home-card p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .home-card {
+    max-width: 700px;
+    padding: 36px;
+  }
+
+  .home-title {
+    font-size: 2.2rem;
+  }
+
+  .home-headline {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-card {
+    max-width: 95%;
+    padding: 30px;
+    min-height: 250px;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-headline {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-card {
+    padding: 24px;
+    min-height: 200px;
+  }
+
+  .home-title {
+    font-size: 1.6rem;
+  }
+
+  .home-headline {
+    font-size: 1.2rem;
+  }
+}
+/* for images within the card */
+.home-image {
+  width: 100%;
+  max-width: 700px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.home-image:hover {
+  transform: scale(1.05);
+}
