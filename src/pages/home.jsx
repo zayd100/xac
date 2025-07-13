@@ -4,6 +4,7 @@ import { useState } from "react";
 import '../styles/home.css';
 import home1 from '../assets/home1.png';
 import home2 from '../assets/home2.png';
+import FurniFlexHeader from "../components/furniflex";
 function Home(){
     const homedata = [
         {
@@ -21,14 +22,17 @@ function Home(){
     ];
     const [home,sethome]=useState(homedata);
     return(
+     <div>
+        <FurniFlexHeader/>
      <div className="home-container">
-       
-     <h1>Welcome to Rent The Furn!</h1>
-     <p>Here you can find the best prices! </p>
+      
+     
      {        homedata.map((data, index) => (
             <Homecard title={data.title} headline={data.headline} content={data.content} image={data.image}/>
      ))}
      </div>
+            </div>
+          
     );
 }
 export default Home;

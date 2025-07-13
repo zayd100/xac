@@ -1,6 +1,9 @@
 # 🪑 Furniture Rent App
 
 A modern, lightning-fast furniture rental platform built with React.js and Vite. Browse, filter, and rent furniture items with an intuitive user interface and seamless user experience.
+## ⬅️ Back Button Preview
+
+![Prev](assets/prev.png)
 
 ## 🚀 Features
 

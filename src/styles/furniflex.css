@@ -1,0 +1,175 @@
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: transparent;
+}
+
+.typing-animation {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  color: #e4ff9b;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: typewriter 4s steps(9, end) infinite;
+}
+
+.typing-animation::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  border-radius: 2px;
+  animation: 
+    cursor-blink 1s ease-in-out infinite,
+    cursor-fade 4s ease-in-out infinite;
+}
+
+/* Enhanced typing animation with smooth looping */
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 9ch;
+  }
+  80% {
+    width: 9ch;
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Sophisticated cursor blinking */
+@keyframes cursor-blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Cursor fade during typing phases */
+@keyframes cursor-fade {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Enhanced version with additional effects */
+.typing-animation-enhanced {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  animation: 
+    typewriter-enhanced 5s cubic-bezier(0.4, 0, 0.2, 1) infinite,
+    text-shimmer 8s ease-in-out infinite;
+}
+
+.typing-animation-enhanced::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  animation: 
+    cursor-blink-enhanced 1.2s ease-in-out infinite,
+    cursor-glow 3s ease-in-out infinite;
+}
+
+@keyframes typewriter-enhanced {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 9ch;
+  }
+  75% {
+    width: 9ch;
+  }
+  85% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes cursor-blink-enhanced {
+  0%, 45% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  46%, 100% {
+    opacity: 0;
+    transform: scaleY(0.8);
+  }
+}
+
+@keyframes cursor-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(74, 144, 226, 0.6);
+  }
+}
+
+@keyframes text-shimmer {
+  0%, 100% {
+    color: #1a1a1a;
+  }
+  50% {
+    color: #2c2c2c;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .typing-animation,
+  .typing-animation-enhanced {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+  
+  .typing-animation::after,
+  .typing-animation-enhanced::after {
+    width: 2px;
+  }
+}
