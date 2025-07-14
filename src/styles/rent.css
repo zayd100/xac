@@ -7,3 +7,9 @@
   min-height: 100vh;
   background-color: #000000; 
 }
+.rent-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* space between items in the row */
+  margin-bottom: 2rem; /* space below the container */
+}

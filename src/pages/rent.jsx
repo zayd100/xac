@@ -68,8 +68,10 @@ const Rent= () =>{
 
         <div className="rent">
     <Searchbar value={searchquery} onChange={handleSearch}/>
+    <div className="rent-btn-container">
         <button className = "rent-button" onClick={sortcheap}>Most Economical</button>
         <button className="rent-button" onClick={sorttop}> Top Of The Line</button>
+            </div>
         {filterCards.map((item, index) => (
             <Card key={index} name={item.name} type={item.type} price={item.price} image={item.image} country={item.country}/>
         ))}
