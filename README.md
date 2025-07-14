@@ -3,7 +3,7 @@
 A modern, lightning-fast furniture rental platform built with React.js and Vite. Browse, filter, and rent furniture items with an intuitive user interface and seamless user experience.
 
 
-![Prev](src/assets/prev.png))
+![Prev](src/assets/prev.png)
 
 ## 🚀 Features
 
