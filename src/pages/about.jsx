@@ -57,7 +57,7 @@ const About = () => {
                         <div className="feature-item">
                             <div className="feature-icon">⚡</div>
                             <h4>Fast & Efficient</h4>
-                            <p>We Deliver Your Furniture within 72 hours!</p>
+                            <p>We Deliver Your Furniture within 72 hours</p>
                         </div>
                         <div className="feature-item">
                             <div className="feature-icon">🎯</div>
