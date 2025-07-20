@@ -6,7 +6,7 @@ const Searchbar= ({value,onChange})=>{
             <input
             type="text"
             className="searchbar-input"
-            placeholder="search furniture"
+            placeholder="search furniture type, name, country, etc..."
             value={value}
             onChange={onChange}
 
